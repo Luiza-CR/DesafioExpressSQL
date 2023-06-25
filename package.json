@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "lint": "eslint **/*.js --ignore-pattern node_modules/"
+    "lint": "eslint **/*.js --ignore-pattern node_modules/",
+    "nodemon": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -13,17 +14,20 @@
   "bugs": {
     "url": "https://github.com/Luiza-CR/DesafioExpressSQL/issues"
   },
-  "homepage": "https://github.com/Luiza-CR/DesafioExpressSQL#readme", 
+  "homepage": "https://github.com/Luiza-CR/DesafioExpressSQL#readme",
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "http-errors": "~1.6.3",
     "jade": "^0.29.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "mysql2": "^3.3.5"
   },
   "devDependencies": {
     "eslint": "^8.42.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^1.14.9"
   }
 }
